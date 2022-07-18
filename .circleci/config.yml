@@ -30,7 +30,7 @@ jobs:
             name: Install openssh
             command: |
               apk add openssh
-
+              
         - add_ssh_keys:
             fingerprints: ["59:32:01:90:81:ad:9a:85:b0:72:8a:96:13:b9:e2:f6"]
               
@@ -49,5 +49,5 @@ workflows:
   # Name the workflow
   myWorkflow:
     jobs:
-      - create_infrastructure
-      # - configure_infrastructure
+      # - create_infrastructure
+      - configure_infrastructure

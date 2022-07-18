@@ -1,7 +1,7 @@
 ---
 - name: Exercise for setting up a web server in an EC2 
   hosts: all
-  user: 18.234.139.8
+  user: 44.200.231.70
   become: true
   become_method: sudo
   become_user: root
