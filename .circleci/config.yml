@@ -33,7 +33,7 @@ jobs:
 
         - run:
             name: Run playbook and Configure Server
-            command: ansible-playbook -i [inventory-file] [playbook-file]
+            command: ansible-playbook -i inventory main-remote.yml
 
 # Sequential workflow
 workflows:
