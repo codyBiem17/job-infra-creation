@@ -33,6 +33,11 @@ jobs:
               
         - add_ssh_keys:
             fingerprints: ["59:32:01:90:81:ad:9a:85:b0:72:8a:96:13:b9:e2:f6"]
+
+        - run:
+            name: change dir
+            command: |
+              cd ~/.ssh
               
         - run:
             name: Install Ansible
@@ -68,5 +73,5 @@ workflows:
   myWorkflow:
     jobs:
       # - create_infrastructure
-      # - configure_infrastructure
-      - smoke_test
+      - configure_infrastructure
+      # - smoke_test
